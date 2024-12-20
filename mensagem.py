@@ -37,7 +37,7 @@ def realizar_envio(mensagem:Mensagem):
 
 email = Email(destinatario="joao.silva@email.com", assunto="Reunião",
 corpo="Reunião marcada para as 10h.")
-sms = SMS(numero="912345678", mensagem="A sua Encomenda Chegou.")
+sms = SMS(numero="912345678", mensagem="A sua Encomenda Chegou!")
 notificacao = NotificacaoPush(dispositivo_id="abc123", mensagem="Tem uma Nova Mensagem.")
 
 realizar_envio(email)
