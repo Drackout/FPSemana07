@@ -1,5 +1,4 @@
 
-
 class Mensagem:
     def __init__(self):
         pass
@@ -32,22 +31,14 @@ class NotificacaoPush(Mensagem):
     def enviar_mensagem(self):
         return f"Notificação Push({self.dispositivo_id}). {self.mensagem}"
 
-
 def realizar_envio(mensagem:Mensagem):
     print(mensagem.enviar_mensagem())
 
 
-
-
-
-
-
-
-
-email = Email(destinatario="joao.silva@email.com", assunto="Reuni~ao",
-corpo="Reuni~ao marcada para as 10h.")
-sms = SMS(numero="912345678", mensagem="A sua encomenda chegou.") ####com ou sem o !
-notificacao = NotificacaoPush(dispositivo_id="abc123", mensagem="Tem uma nova mensagem.")
+email = Email(destinatario="joao.silva@email.com", assunto="Reunião",
+corpo="Reunião marcada para as 10h.")
+sms = SMS(numero="912345678", mensagem="A sua Encomenda Chegou.")
+notificacao = NotificacaoPush(dispositivo_id="abc123", mensagem="Tem uma Nova Mensagem.")
 
 realizar_envio(email)
 realizar_envio(sms)
